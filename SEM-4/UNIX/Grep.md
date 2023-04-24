@@ -32,3 +32,11 @@ grep current bank.lst
 ```
 101 Aditya 0 14/11/2000 current
 103 Naman 0 20/08/2009 current
+
+# Search lines containing the pattern 'Chirag' in file bank.lst
+```
+grep 'Chirag' bank.lst
+or
+grep Chirag bank.lst
+```
+108 Chirag 0 15/12/2012 Current
