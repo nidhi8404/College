@@ -22,6 +22,13 @@ sed '1i 201 Viren 2000 13/05/2012 saving' bank.lst > newbank.lst
 sed '/viraj/d' newbank.lst
 ```
 
+## Remembered Patterns in sed
+```
+sed -n '/\([Aa]\)\([a-z]\)/p' bank.lst
+```
+```
+ sed -n '/\([Aa]\)\([a-z]*\)/p' bank.lst
+```
 
 
 
