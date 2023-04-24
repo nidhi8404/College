@@ -1,12 +1,10 @@
-## All the Grep Commands
+# All the Grep Commands
 
 ```
 cat bank.lst
 ```
-101 Aditya 0 14/11/2000 current
-
+101 Aditya 0 14/11/2000 current                                                                                                                                         
 102 Anil 10000 20/05/2011 saving
-
 103 Naman0 20/08/2009 current
 104 Ram 10000 15/08/2010 saving
 105 Jyotsna 5000 16/06/2012 saving
@@ -16,13 +14,13 @@ cat bank.lst
 109 Arya 16000 14/12/2010 Current
 110 Priya 130 16/11/2009 Saving
 
-# Search lines containing the pattern 'mu' in file bank.lst
+## Search lines containing the pattern 'mu' in file bank.lst
 ```
 grep mu bank.lst
 ```
 Since mu is not there in bank.lst, it displays nothing on screen
 
-# Search lines containing the pattern 'Mu' in file bank.lst
+## Search lines containing the pattern 'Mu' in file bank.lst
 ```
 grep Mu bank.lst
 ```
@@ -35,7 +33,7 @@ grep current bank.lst
 101 Aditya 0 14/11/2000 current
 103 Naman 0 20/08/2009 current
 
-# Search lines containing the pattern 'Chirag' in file bank.lst
+## Search lines containing the pattern 'Chirag' in file bank.lst
 ```
 grep 'Chirag' bank.lst
 ```
@@ -45,20 +43,20 @@ grep Chirag bank.lst
 ```
 108 Chirag 0 15/12/2012 Current
 
-# Count the number of lines containing the pattern 'Current' in file bank.lst
+## Count the number of lines containing the pattern 'Current' in file bank.lst
 ```
 grep -c Current bank.lst
 ```
 3
 
-# Display line numbers along with lines containing the pattern 'current' in file bank.lst
+## Display line numbers along with lines containing the pattern 'current' in file bank.lst
 ```
 grep -n current bank.lst
 ```
 1:101 Aditya 0 14/11/2000 current
 3:103 Naman0 20/08/2009 current
 
-# Display lines not containing the pattern 'current' in file bank.lst
+## Display lines not containing the pattern 'current' in file bank.lst
 ```
 grep -v current bank.lst
 ```
@@ -71,7 +69,7 @@ grep -v current bank.lst
 109 Arya 16000 14/12/2010 Current
 110 Priya 130 16/11/2009 Saving
 
-# List the file names containing the pattern 'current' in file bank.lst
+## List the file names containing the pattern 'current' in file bank.lst
 ```
 grep -l current *.lst
 ```
@@ -79,7 +77,7 @@ bank.lst
 clist.lst
 newbank.lst
 
-# List the file names not containing the pattern 'current' in file bank.lst
+## List the file names not containing the pattern 'current' in file bank.lst
 ```
 grep -L current *.java~
 ```
