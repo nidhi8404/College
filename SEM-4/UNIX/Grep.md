@@ -1,4 +1,4 @@
-All the Grep Commands
+# All the Grep Commands
 
 ```
 cat bank.lst
@@ -14,14 +14,21 @@ cat bank.lst
 109 Arya 16000 14/12/2010 Current
 110 Priya 130 16/11/2009 Saving
 
-#Search lines containing the pattern 'mu' in file bank.lst
+# Search lines containing the pattern 'mu' in file bank.lst
 ```
 grep mu bank.lst
 ```
 Since mu is not there in bank.lst, it displays nothing on screen
 
-##Search lines containing the pattern 'Mu' in file bank.lst
+# Search lines containing the pattern 'Mu' in file bank.lst
 ```
 grep Mu bank.lst
 ```
 106 Mukesh 14000 20/12/2009 Current
+
+# Search lines containing the pattern 'current' in file bank.lst
+```
+grep current bank.lst
+```
+101 Aditya 0 14/11/2000 current
+103 Naman 0 20/08/2009 current
