@@ -4,7 +4,9 @@
 cat bank.lst
 ```
 101 Aditya 0 14/11/2000 current
+
 102 Anil 10000 20/05/2011 saving
+
 103 Naman0 20/08/2009 current
 104 Ram 10000 15/08/2010 saving
 105 Jyotsna 5000 16/06/2012 saving
