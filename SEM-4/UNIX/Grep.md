@@ -19,3 +19,9 @@ cat bank.lst
 grep mu bank.lst
 ```
 Since mu is not there in bank.lst, it displays nothing on screen
+
+##Search lines containing the pattern 'Mu' in file bank.lst
+```
+grep Mu bank.lst
+```
+106 Mukesh 14000 20/12/2009 Current
