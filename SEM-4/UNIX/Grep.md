@@ -1,4 +1,4 @@
-# All the Grep Commands
+## All the Grep Commands
 
 ```
 cat bank.lst
