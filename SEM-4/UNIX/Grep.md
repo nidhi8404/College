@@ -36,7 +36,27 @@ grep current bank.lst
 # Search lines containing the pattern 'Chirag' in file bank.lst
 ```
 grep 'Chirag' bank.lst
+```
 or
+```
 grep Chirag bank.lst
 ```
 108 Chirag 0 15/12/2012 Current
+
+# Count the number of lines containing the pattern 'Current' in file bank.lst
+```
+grep -c Current bank.lst
+```
+3
+
+
+
+
+
+
+
+
+
+
+
+
