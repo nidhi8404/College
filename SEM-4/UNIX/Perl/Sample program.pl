@@ -20,3 +20,20 @@ print "\$names[2] = $names[2]\n";
 print "\$data{'John Paul'} = $data{'John Paul'}\n";
 print "\$data{'Lisa'} = $data{'Lisa'}\n";
 print "\$data{'Kumar'} = $data{'Kumar'}\n";
+
+# -------output-----------
+# Age = 25
+# Name = John Paul
+# Salary = 1445.5
+# $ages[0] = 25
+# $ages[1] = 30
+# $ages[2] = 40
+# $ages[-1] = 40
+# $ages[-2] = 30
+# $ages[-3] = 25
+# $names[0] = John Paul
+# $names[1] = Lisa
+# $names[2] = Kumar
+# $data{'John Paul'} = 45
+# $data{'Lisa'} = 30
+# $data{'Kumar'} = 40
