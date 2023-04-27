@@ -1,0 +1,26 @@
+import java.io.*;
+import java.net.*;
+import java.util.Scanner;
+
+class TCPC{
+    public static void main(String args[]) throws Exception{
+        int num, fact;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number to find factorial: ");
+        num = sc.nextInt();
+
+        Socket client = new Socket("localhost", 5678);
+
+        DataOutputStream toServer = new DataOutputStream(client.getOutputStream());
+        toServer.writeInt(num);
+
+        DataInputStream fromServer = new DataInputStream(client.getInputStream());
+        fact = fromServer.readInt();
+
+        System.out.println(num + "! = " + fact);
+
+        client.close();
+    }
+}
