@@ -1,12 +1,12 @@
 set ns [new Simulator]
 
-set anim [open out.nam w]
-$ns namtrace-all $anim
+set nf [open out.nam w]
+$ns namtrace-all $nf
 
 proc finish {} {
-	global ns anim
+	global ns nf
 	$ns flush-trace
-	close $anim
+	close $nf
 	exec nam out.nam &
 	exit 0
 }
