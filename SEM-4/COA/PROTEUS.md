@@ -1,12 +1,15 @@
 
-name - 8086_7Seg_PushBtn
+### name 
+```
+8086_7Seg_PushBtn
+```
 
 ### Create Firmware proj
-Family Controller - 8086
+Family Controller - 8086                
 Compiler - MASM32
 
 ### Edit Properties
-Clock Freq - 1MHz
+Clock Freq - 1MHz                                          
 Adv Properties - Internal Memory Size
 0x10000
 
