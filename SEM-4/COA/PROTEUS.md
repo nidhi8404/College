@@ -31,6 +31,6 @@ logicst(logicstate)
 ```
 
 
-res(edit properties)
+### res(edit properties)
 resistance - 1k
 
