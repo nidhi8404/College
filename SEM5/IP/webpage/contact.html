@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact | My Web Page</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <!-- Active link, as we are currently on the contact.html page -->
+            <a href="contact.html">Contact</a>
+        </nav>
+    </center>
+    </header>
+
+    <!-- Content section -->
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>If you have any questions, feel free to contact me.</p>
+            <table>
+                <tr>
+                    <th>Contact Method</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>nidhi@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+91 98678 06807</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>101 Baug Street, Mumbai, India</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <br>
+    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    <!-- Footer section -->
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+</body>
+</html>
