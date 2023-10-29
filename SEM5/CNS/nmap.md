@@ -57,4 +57,6 @@ Nmap done: 1 IP address (1 host up) scanned in 0.08 seconds
 
 
 Alternate :
+```
 sudo nmap -sU google.com(for udp)
+```
