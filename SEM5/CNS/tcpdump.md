@@ -6,7 +6,7 @@ sudo tcpdump -D
 ```
 Basic command for sniffing
 The -n parameter is given to stop tcpdump from resolving ip addresses to hostnames, which take look and not required right now.
-##TCP (Transmission Control Protocol):
+TCP (Transmission Control Protocol):
 To capture only TCP packets, you can use the following command:
 ```
 sudo tcpdump -n -i enp0s3 -p tcp
