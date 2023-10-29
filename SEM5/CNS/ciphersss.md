@@ -1,6 +1,6 @@
 breaking shift cipher
 
-cipher txt guven - haahjr ha khdu
+cipher txt given - haahjr ha khdu
 
 put tht in PART 3 - Cipher txt
 
