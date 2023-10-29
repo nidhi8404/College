@@ -1,0 +1,7 @@
+1.create two text file(f1.txt and f2.txt)--- touch f1.txt
+2.create output.text where hash value will be saved
+3.hashdeep f1.txt > output.txt(to redirect output to another files)
+4.hashdeep -a -r -k output.txt /home/nidhishinde/Documents/hash/--- for auditing
+5.make sure output.txt is not in the same folder as the files which are hased
+6.for +ve matching (hashdeep -m -k output.txt)
+7.fr -ve matching (hashdeep -s -x output.txt)
