@@ -1,3 +1,11 @@
+
+Choosing an interface: 
+By default, tcpdump captures packets on all interfaces. To view a summary of available interfaces, run 
+```
+sudo tcpdump -D
+```
+Basic command for sniffing
+The -n parameter is given to stop tcpdump from resolving ip addresses to hostnames, which take look and not required right now.
 TCP (Transmission Control Protocol):
 To capture only TCP packets, you can use the following command:
 ```
@@ -23,4 +31,7 @@ sudo tcpdump -n dst 10.0.2.15
 Observing packets within a specific port range
 ```
 sudo tcpdump -n portrange 1-80
+```
+```
+sudo tcpdump -n src port 443
 ```
