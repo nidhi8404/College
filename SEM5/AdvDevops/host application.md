@@ -62,7 +62,3 @@ If your application involves sensitive data, implement serverless authentication
 
 Please note that this guide provides a basic overview of hosting a web application on Amazon S3. Consider additional security and scalability measures based on your application's specific requirements.
 
-For more detailed information and best practices, refer to AWS documentation and security guidelines.
-```
-
-Feel free to copy and paste this content into your `README.md` file, and don't forget to replace `"your-bucket-name"` and customize the content to your specific project needs.
