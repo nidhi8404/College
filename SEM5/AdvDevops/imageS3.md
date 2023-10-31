@@ -41,6 +41,21 @@ def lambda_handler(event, context):
         "body": json.dumps("Lambda function executed successfully.")
     }
 ```
+```
+import json
+def lambda_handler(event, context):
+    # Check if the event is an S3 event
+    if 'Records' in event:
+        for record in event['Records']:
+            if record['eventSource'] == 'aws:s3' and record['eventName'].startswith('ObjectCreated'):
+                # Handle the event when an object (image) is created in the S3 bucket
+                print("Image Uploaded")
+                # You can perform additional processing here if needed
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Lambda executed successfully!')
+    }
+```
 
 3. Save the Lambda function.
 
