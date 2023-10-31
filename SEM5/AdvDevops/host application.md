@@ -37,7 +37,7 @@ This guide provides step-by-step instructions for hosting a web application with
         }
     ]
 }
-
+```
 
 Replace `"your-bucket-name"` with your bucket name.
 
