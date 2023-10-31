@@ -6,7 +6,14 @@ In AWS, S3 buckets can be categorized into two types:
 
 2. **Temporary Bucket:** You can configure S3 buckets for short-term purposes. For tasks like temporary data processing, set up retention or lifecycle policies to automatically delete objects after a specific period, making the bucket temporary.
 
+**Kubernetes in Advanced DevOps on AWS**
 
+Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It's a critical tool in advanced DevOps practices on AWS, enabling efficient and scalable container management, continuous integration/continuous deployment (CI/CD), and microservices architecture.
+
+In short, Kubernetes empowers DevOps teams to automate and streamline application deployment, scaling, and management, making it an essential component of modern cloud-native development on AWS.
+
+
+**Difference**
 
 | Aspect                | Ubuntu                               | Windows                           |
 |-----------------------|-------------------------------------|-----------------------------------|
