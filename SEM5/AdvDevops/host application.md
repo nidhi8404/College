@@ -1,6 +1,6 @@
 Certainly! Here's the content you can use for a `README.md` file to document the steps for hosting a web application with a login form and validation using an Amazon S3 bucket in AWS:
 
-```markdown
+
 # Hosting a Web Application with Login Form and Validation on Amazon S3
 
 This guide provides step-by-step instructions for hosting a web application with a login form and validation using an Amazon S3 bucket in AWS. 
@@ -37,7 +37,7 @@ This guide provides step-by-step instructions for hosting a web application with
         }
     ]
 }
-```
+
 
 Replace `"your-bucket-name"` with your bucket name.
 
