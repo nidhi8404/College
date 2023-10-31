@@ -7,6 +7,7 @@ In AWS, S3 buckets can be categorized into two types:
 2. **Temporary Bucket:** You can configure S3 buckets for short-term purposes. For tasks like temporary data processing, set up retention or lifecycle policies to automatically delete objects after a specific period, making the bucket temporary.
 
 
+
 | Aspect                | Ubuntu                               | Windows                           |
 |-----------------------|-------------------------------------|-----------------------------------|
 | **Licensing**         | Open-source (GPL), free.            | Proprietary, requires purchase.   |
