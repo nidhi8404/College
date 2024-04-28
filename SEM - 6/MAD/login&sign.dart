@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('Login & Signup'),
-            bottom: TabBar(
+            title: const Text('Login & Signup'),
+            bottom: const TabBar(
               tabs: [
                 Tab(text: 'Login'),
                 Tab(text: 'Signup'),
@@ -41,26 +41,32 @@ class LoginCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
-        margin: EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(20.0),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: const InputDecoration(labelText: 'Email'),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextField(
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: const InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   // Handle login logic here
+                  // For demonstration purposes, show a snackbar indicating login success
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Logged in successfully!'),
+                    ),
+                  );
                 },
-                child: Text('Login'),
+                child: const Text('Login'),
               ),
             ],
           ),
@@ -75,30 +81,43 @@ class SignupCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Card(
-        margin: EdgeInsets.all(20.0),
+        margin: const EdgeInsets.all(20.0),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(labelText: 'Full Name'),
+                decoration: const InputDecoration(labelText: 'Full Name'),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextField(
-                decoration: InputDecoration(labelText: 'Email'),
+                decoration: const InputDecoration(labelText: 'Email'),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               TextField(
-                decoration: InputDecoration(labelText: 'Password'),
+                decoration: const InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   // Handle signup logic here
+                  // For demonstration purposes, show a snackbar indicating signup success
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Signed up successfully!'),
+                    ),
+                  );
+                  // After signup, you can automatically log in the user
+                  // For demonstration purposes, also show a snackbar indicating login success
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Logged in successfully!'),
+                    ),
+                  );
                 },
-                child: Text('Signup'),
+                child: const Text('Signup'),
               ),
             ],
           ),
